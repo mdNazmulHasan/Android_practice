@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical" 
+    android:background="@drawable/andrd">
+
+    <Button
+        android:id="@+id/btnCreateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:padding="10dp"
+        android:text="Create New Profile" />
+    
+    <Button
+        android:id="@+id/btnViewProfile"
+        android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        
+        android:padding="10px"
+        android:text="View Profile" />
+    
+    <Button
+        android:id="@+id/btnAddDietChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        
+        android:text="Add Daily Diet Chart" />
+
+    <Button
+        android:id="@+id/btnViewDietChart"
+        android:layout_width="match_parent"
+        android:padding="20px"
+        android:layout_height="wrap_content"
+        
+        android:text="View Diet Chart" />
+
+</LinearLayout>
