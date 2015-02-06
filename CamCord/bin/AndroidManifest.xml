@@ -45,6 +45,7 @@
         </activity>
         <activity
             android:name=".InsertLocationInfoActivity"
+            android:windowSoftInputMode="stateHidden"
             android:label="@string/title_activity_insert_hostpital_info" >
         </activity>
         <activity
