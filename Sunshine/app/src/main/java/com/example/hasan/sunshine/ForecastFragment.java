@@ -103,7 +103,7 @@ public class ForecastFragment extends Fragment {
         // Get a reference to the ListView, and attach this adapter to it.
         ListView listView = (ListView) rootView.findViewById(R.id.listview_forecast);
         listView.setAdapter(mForecastAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -112,11 +112,11 @@ public class ForecastFragment extends Fragment {
                         .putExtra(Intent.EXTRA_TEXT, forecast);
                 startActivity(intent);
             }
-        });
+        });*/
 
         WeatherTimerTask myTask= new WeatherTimerTask();
         Timer myTimer=new Timer();
-        myTimer.schedule(myTask,10000,10000);
+        myTimer.schedule(myTask,10000,300000);
 
 
 
@@ -221,7 +221,7 @@ public class ForecastFragment extends Fragment {
 
 
 
-                resultStrs[i] = day + " - " + todayTemp+" - "+nightTemp+" - "+eveTemp+" - "+mornTemp;
+                resultStrs[i] = day + "   " + todayTemp+"   "+nightTemp+"   "+eveTemp+"   "+mornTemp;
             }
             return resultStrs;
 
